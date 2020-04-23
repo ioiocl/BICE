@@ -1,0 +1,26 @@
+{
+  "name": "BICE-back",
+  "version": "1.0.0",
+  "description": "BICE Labs.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AVP",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "fastify": "^2.1.0",
+    "fastify-cors": "^2.1.0",
+    "fastify-mongodb": "^0.9.1",
+    "fastify-static": "^2.7.0",
+    "fastify-swagger": "^0.15.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.10",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.4",
+    "tulind": "^0.8.18"
+  },
+  "devDependencies": {}
+}
