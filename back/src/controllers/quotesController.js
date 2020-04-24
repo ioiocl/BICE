@@ -1,17 +1,14 @@
-// External Dependancies
 const boom = require('boom')
-
-// Get Data Models
 const fetch = require("node-fetch");
 const moment = require("moment");
-var tulind = require('tulind');
+const tulind = require('tulind');
 const url = "https://www.indecon.online/values/cobre";
+const axios = require('axios');
 
-// Get all cars
 exports.getQuotes = async (req, reply) => {
   try {
-    const response = await fetch(url);
-    const json = await response.json();
+    const response = await axios.get(url);
+    const json = await response.data;
     var list = [];
     Object.keys(json.values).forEach(key => {
       var sma = {date : moment.unix(key).format("DD/MM/YYYY"),
@@ -40,3 +37,8 @@ exports.getQuotes = async (req, reply) => {
   }
 }
 
+exports.test = async (req, reply) => {
+  const response = await axios.get(url);
+  const json = await response.data;
+  return json
+}
