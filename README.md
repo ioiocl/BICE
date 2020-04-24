@@ -17,6 +17,6 @@ Para ver el resultado de la api : http://localhost:3001/api/quotes
 Y la documentación swagger : http://localhost:3001/documentation
 
 
-# Disclaimer
+# Test
 
-Quede al debe con las pruebas de la app.
+Ejecutar npm test en la carpeta back. Solo agrege un pequeño test en el backend para quotesController el cual es el encargado de procesar los datos de la api indecom para obtener las medias moviles, pero por asuntos de tiempo no lo pude extender.
