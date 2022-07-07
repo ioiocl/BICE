@@ -19,7 +19,7 @@
     "fastify-static": "^2.7.0",
     "fastify-swagger": "^0.15.3",
     "jest": "^25.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.10",
     "node-fetch": "^2.6.0",
     "nodemon": "^1.19.4",
